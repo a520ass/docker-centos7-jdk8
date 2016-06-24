@@ -8,13 +8,8 @@ ENV JAVA_FOLDER_NAME jdk1.8.0_92
 ENV JDK_HOME /usr/java/${JAVA_FOLDER_NAME}
 ENV JAVA_HOME /usr/java/${JAVA_FOLDER_NAME}/jre
 
-RUN mkdir -p /usr/java
-
-RUN curl \
-	-L \
-	-H "Cookie: oraclelicense=accept-securebackup-cookie" \
-	"${JAVA_URL}" | \ 
-	tar -xz -C /usr/java && \
-	chown -R root:root ${JDK_HOME}
+COPY java-installer.sh /
+RUN /java-installer.sh
+RUM rm /java-installer.sh
 
 CMD ["/bin/bash"]
