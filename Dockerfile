@@ -10,6 +10,6 @@ ENV JAVA_HOME /usr/java/${JAVA_FOLDER_NAME}/jre
 
 COPY java-installer.sh /
 RUN /java-installer.sh
-RUM rm /java-installer.sh
+RUN rm /java-installer.sh
 
 CMD ["/bin/bash"]
