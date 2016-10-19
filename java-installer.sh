@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Checksum from https://www.oracle.com/webfolder/s/digest/8u102checksum.html
-CHECKSUM="7cfbe0bc0391a4abe60b3e9eb2a541d2315b99b9cb3a24980e618a89229e04b7"
+# Checksum from https://www.oracle.com/webfolder/s/digest/8u112checksum.html
+CHECKSUM="777bd7d5268408a5a94f5e366c2e43e720c6ce4fe8c59d9a71e2961e50d774a5"
 
 curl \
 	-L \
