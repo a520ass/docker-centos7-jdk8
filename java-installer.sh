@@ -1,8 +1,8 @@
 #!/bin/bash
 
-JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.tar.gz"
-# Checksum from https://www.oracle.com/webfolder/s/digest/8u121checksum.html
-CHECKSUM="97e30203f1aef324a07c94d9d078f5d19bb6c50e638e4492722debca588210bc"
+JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz"
+# Checksum via https://www.oracle.com/webfolder/s/digest/8u131checksum.html
+CHECKSUM="62b215bdfb48bace523723cdbb2157c665e6a25429c73828a32f00e587301236"
 
 curl \
 	-L \
