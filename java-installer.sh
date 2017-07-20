@@ -1,8 +1,8 @@
 #!/bin/bash
 
-JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz"
-# Checksum via https://www.oracle.com/webfolder/s/digest/8u131checksum.html
-CHECKSUM="62b215bdfb48bace523723cdbb2157c665e6a25429c73828a32f00e587301236"
+JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.tar.gz"
+# Checksum via https://www.oracle.com/webfolder/s/digest/8u141checksum.html
+CHECKSUM="041d5218fbea6cd7e81c8c15e51d0d32911573af2ed69e066787a8dc8a39ba4f"
 
 curl \
 	-L \
@@ -24,5 +24,7 @@ fi
 mkdir -p /usr/java
 tar -xzf /tmp/jdk.tar.gz -C /usr/java
 chown -R root:root ${JDK_HOME}
+ln -s ${JDK_HOME} /usr/java/jdk1.8
+echo "PATH=$PATH:/usr/java/jdk1.8/jre/bin:/usr/java/jdk1.8/bin" > /etc/profile.d/java
 rm /tmp/jdk.tar.gz
 
