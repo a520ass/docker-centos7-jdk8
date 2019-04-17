@@ -5,6 +5,12 @@ LABEL name="CentOS7 with JDK8"
 #修改时间和时区 https://blog.csdn.net/alinyua/article/details/80944543
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' >/etc/timezone
+#安装中文支持
+RUN yum -y install kde-l10n-Chinese && yum -y install glibc-common
+#设置环境变量
+ENV LC_ALL zh_CN.utf8
+#配置显示中文
+RUN localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
 
 COPY java-installer.sh /
 RUN /java-installer.sh
