@@ -17,7 +17,7 @@ COPY java-installer.sh /
 RUN /java-installer.sh
 RUN rm /java-installer.sh
 
-ENV JAVA_FOLDER_NAME jdk1.8.0_211-amd64
+ENV JAVA_FOLDER_NAME jdk1.8.0_212-amd64
 ENV JAVA_HOME /usr/java/${JAVA_FOLDER_NAME}
 ENV JRE_HOME /usr/java/${JAVA_FOLDER_NAME}/jre
 ENV PATH=$JAVA_HOME/bin:$PATH \

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-JAVA_URL="http://hffile.oss-cn-hangzhou.aliyuncs.com/jdk-8u211-linux-x64.rpm"
-# Checksum via https://www.oracle.com/webfolder/s/digest/8u211checksum.html
-CHECKSUM="6e0274e95edb94e1cabf091c7c6035e22256080f746ba605958c961a5fd032fb"
+JAVA_URL="http://www.jxgztv.com/u/videos/upload/vod2/jdk-8u212-linux-x64.rpm"
+# Checksum via https://www.oracle.com/webfolder/s/digest/8u212checksum.html
+CHECKSUM="9ce8693d39fa5fefee9a8a231b4ea3106de4c694c31b193ae06d8a6a0abda836"
 
 curl \
 	-L \
